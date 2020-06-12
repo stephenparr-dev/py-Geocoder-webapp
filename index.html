@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title> Geocoder Application</title>
+    <head>
+        <link href="../static/css/main.css" rel="stylesheet">
+    </head>
+        <body>
+            <div class="instructions">
+                <h1>Geocoder Application</h1>
+                <h3>Please upload your CSV file using the Choose file option below.</h3>
+                <h3>The address values in your file should be contained in a column named <em>Address</em> or <em>address</em>.</h3>
+                <form action="{{url_for('success')}}" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file"><br>
+                    <button type="submit">
+                        Submit
+                    </button>
+                </form>
+                <div class="dftable">
+                    <center>{{text | safe}}</center>
+                </div>
+                {% include [btn] ignore missing %}
+            </div>
+        </body>
+</html>

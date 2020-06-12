@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.instructions {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    background-color: darkseagreen;
+    color: darkorchid;
+    overflow: scroll;
+    text-align: center;
+}
+
+.instructions h1 {
+    font-family: Cailbri, sans-serif;
+    font-size: 30px;
+    color: indigo;
+    margin-top: 100px;
+}
+
+.instructions h3 {
+    font-family: Cailbri, sans-serif;
+    font-size: 16px;
+    color: slateblue;
+}
+
+.instructions form {
+    margin: 20px;
+}
+
+.instructions input {
+    width: 350px;
+    height: 15px;
+    font-size: 15px;
+    margin: 2px;
+    padding: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.instructions button {
+    width: 70px;
+    height: 30px;
+    background-color: aliceblue;
+    margin: 3px;
+}
+
+.mystyle {
+    font-size: 11pt;
+    font-family: Cailbri, sans-serif;
+    border-collapse: collapse;
+    border: 1px solid silver;
+    margin: 20px;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.mystyle td, th {
+    padding: 5px;
+}
+
+.mystyle tr:nth-child(even) {
+    background: #e0e0e0;
+}
+
+.mystyle tr:hover {
+    background: silver;
+    cursor: pointer;
+}
